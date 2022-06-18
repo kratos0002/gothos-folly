@@ -117,7 +117,8 @@ def quotes_by_author(author, page_num=None):
 
 	return all_quotes
 
-listofquotes = quotes_by_author("Jack Kerouac")
+author = input('Which author')
+listofquotes = quotes_by_author(author)
 
 
 import pandas as pd
