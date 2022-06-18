@@ -16,10 +16,18 @@ def random(update, context):
     # send message
     context.bot.send_message(chat_id=update.effective_chat.id, text=data['text']+' - '+data['title']+ ' - '+data['author']) 
 
+def randommusic(update, context):
+    # fetch data from the api
+    response = requests.get('http://3.6.86.239:49161/random')
+    data = response.json()
+    # send message
+    context.bot.send_message(chat_id=update.effective_chat.id, text=data['lyrics']+' - '+data['name']+ ' - '+data['artist']) 
 
 
 # linking the /random command with the function random() 
 quotes_handler = CommandHandler('random', random)
+lyrics_handler = CommandHandler('randommusic', randommusic)
 dispatcher.add_handler(quotes_handler)
+dispatcher.add_handler(lyrics_handler)
 
 updater.start_polling()
