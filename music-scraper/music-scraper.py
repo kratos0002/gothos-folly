@@ -57,7 +57,8 @@ def get_artist(name):
   data = apod_dict['response']['hits']
   return data[0]['result']['primary_artist']['id']
 
-list_of_artists = ['America']
+artist = input('Which artist')
+list_of_artists = [artist]
 pick_artist = random.choice(list_of_artists)
 id = get_artist(pick_artist)
 print(pick_artist)
@@ -154,8 +155,8 @@ def get_all_lyrics(songlist):
         # print(inner_text)
         songmeta['lyrics']=inner_text 
         songmeta['artist']=pick_artist
-        print("songmeta")
-        print(songmeta)
+        # print("songmeta")
+        # print(songmeta)
         all_lyrics.append(songmeta)
         
     return all_lyrics
@@ -199,5 +200,6 @@ records = db.music_c
 dict = df.to_dict('records')
 
 records.insert_many(dict)
+print('all records moved to mongo')
 
 
