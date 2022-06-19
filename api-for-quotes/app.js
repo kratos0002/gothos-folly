@@ -92,3 +92,19 @@ app.get("/random", (req, res) => {
 });
 
 
+app.get("/authors", (req, res) => {
+    collection.distinct(("author"), (error, result) => {
+       if(error) {
+           return res.status(500).send(error);
+       }
+       res.send(result);
+   })});
+
+
+app.get("/titles", (req, res) => {
+       collection.distinct(("title"), (error, result) => {
+          if(error) {
+              return res.status(500).send(error);
+          }
+          res.send(result);
+      })});
