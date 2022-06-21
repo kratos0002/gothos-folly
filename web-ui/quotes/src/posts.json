@@ -1,0 +1,20 @@
+{
+    "posts": [
+      {
+        "_id":"a8854075fcb6ff347ad46be02eacfe094d8a5996ea24950e6b25758c7f380ab7",
+        "text":"“Children are dying,That's a succinct summary of human...",
+        "author": "Steven Erikson",
+        "title": "Deadhouse Gates",
+        "tags": null,
+        "likes": 671
+      },
+      {
+        "_id":"a8854075fcb6ff347ad46be02eacfe094d8a5996ea249dzfsdfsdfsfsdfsdfsf9",
+        "text":"“Vishal is the greatest boii...",
+        "author": "Steven Erikson",
+        "title": "Deadhouse Gates",
+        "tags": null,
+        "likes": 800
+      }
+    ]
+  }
