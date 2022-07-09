@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center p-4 rounded">
     <!-- Start of select dropdown -->
-    <div class="relative inline-flex">
+    <!-- <div class="relative inline-flex">
       <svg
         class="absolute top-0 right-0 w-2 h-2 m-4 pointer-events-none"
         xmlns="http://www.w3.org/2000/svg"
@@ -25,13 +25,18 @@
           {{ capitalize(section) }}
         </option>
       </select>
-    </div>
+    </div> -->
     <!-- End of select dropdown -->
     <div class="self-center ml-8">
       <button
+        class="px-6 m-3 py-2 text-white bg-green-700 rounded hover:bg-green-900"
+      >
+        Home
+      </button>
+      <button
         class="px-6 py-2 text-white bg-green-700 rounded hover:bg-green-900"
       >
-        Retrieve
+        Random
       </button>
     </div>
   </div>

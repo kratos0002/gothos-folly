@@ -2,12 +2,13 @@
   <div
     class="grid grid-cols-1 gap-6 mt-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-items-center"
   >
-    <NewsCard v-for="(post, index) in posts" :key="index" :post="post" />
+    <QuotesCard v-for="(post, index) in posts" :key="index" :post="post" />
   </div>
 </template>
 
 <script>
 import NewsCard from "./quotesCard.vue"
+import QuotesCard from "./quotesCard.vue"
 export default {
   props: {
     posts: {
@@ -17,6 +18,7 @@ export default {
   },
   components: {
     NewsCard,
-  },
+    QuotesCard
+},
 }
 </script>
